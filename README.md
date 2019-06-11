@@ -37,12 +37,21 @@ Left Image and Left Image Inverted <br/>
 Right Image and Right Image Inverted <br/>
 
 ## Step 2: Splitting the Data
+To understand if we are overfitting the data or not, we need to track both the training data loss as well as the validation data loss. For the split I used the convention 80/20 split using functions from sklearn.  
 ```python
-
+from sklearn.model_selection import train_test_split
+def split_data(self):
+        train_samples, validation_samples = train_test_split(self.data, test_size=0.2)
+        self.training_samples = train_samples
+        self.validation_samples = validation_samples
+        return None
 ```
 ## Step 3: Training the model
 ### Training Model Architecture
-My model borrowed heavily from the NVIDIA architecture. I have added a dropout of 0.3 after each convolution layer.
+My model borrowed heavily from the NVIDIA architecture. 
+![NVIDIA Image](images/NVIDIA.png "NVIDIA Architecture Image") 
+
+I implemented dropouts of 0.3 after each convolution layer as the initial models that I trained without the dropout were overfitting (the training loss signicantly lower than validation loss).  
 The CNN used a 5x5 and 3x3 kernel. The RELU activation were used to introduce nonlinearity.
 ```python
 model.add(Conv2D(24, (5,5), strides=(2,2), activation='relu'))
