@@ -29,6 +29,10 @@ Because the data provided was not sufficient enough for training the model to ge
 * Using the left camera images and adding offset in steering measurements.
 * Using the right camera images and subtracting offset in steering measurements.
 
+![CenterImage](center.png "Center Image") ![CenterImageInverted](center_inverted.png "Center Image Inverted")
+![LeftImage](left.png "Left Image") ![LeftImageInverted](left_inverted.png "Left Image Inverted")
+![RightImage](right.png "Right Image") ![RightImageInverted](right_inverted.png "Right Image Inverted")
+
 ## Step 2: Splitting the Data
 ```python
 
