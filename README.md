@@ -66,6 +66,18 @@ These were some of the parameters that have been tuned during the process of tra
 * epoch=5. Tried to tune this number to be 20, however a high number of epoch would result in overfitting and negatively influenced the generalization of the model.
 * SAS_corr=0.08. This was the correction factor that was used to offset the steering angle correction for left and right camera images. The value of 0.2 seemed to make the vehicle oscillate and lowering this number resulted in much smoother performance.
 
-## Training Loss vs Validation Loss
+### Training Loss vs Validation Loss
 Below is the plot of the training loss vs the validation loss over the course of 5 epochs.
 
+## Step 4: Running the model
+After many, many, many training, tuning, and validation, I was able to finally get a model that was able to navigate through the course.
+
+video.mp4
+
+## Conclusion
+One of the most usefuly takeaway from this project for me was using OOP to structure my pipeline. Having a background mostly in MATLAB and script languges, I am not comfortable writing classes. However, after looking at examples online, many people seem to write their pipeline using the OOP approach.
+  
+Aside from the positives, there are many things that can be approved with my model:
+* Gathering Data. I could have definitely used much more data to train my model to navigate smoother in entrance of curves.
+* Augmentating Data. I could have also added noise, translated the images.
+* Track 2. Definitely will go back to this project to train a model that can navigate through track 2.
