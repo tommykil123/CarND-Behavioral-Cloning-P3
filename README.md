@@ -84,6 +84,8 @@ These were some of the parameters that have been tuned during the process of tra
 
 ### Training Loss vs Validation Loss
 Below is the plot of the training loss vs the validation loss over the course of 5 epochs.
+![plot](images/Training vs Test Loss.png "plot")
+As seen, the validation set does not improve dramatically after the 5th epoch in training.
 
 ## Step 4: Running the model
 After many, many, many training, tuning, and validation, I was able to finally get a model that was able to navigate through the course.
