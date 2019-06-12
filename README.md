@@ -88,7 +88,7 @@ Below is the plot of the training loss vs the validation loss over the course of
 ## Step 4: Running the model
 After many, many, many training, tuning, and validation, I was able to finally get a model that was able to navigate through the course.
 
-video.mp4
+![video](video.mp4 "Video") 
 
 ## Conclusion
 One of the most usefuly takeaway from this project for me was using OOP to structure my pipeline. Having a background mostly in MATLAB and script languges, I am not comfortable writing classes. However, after looking at examples online, many people seem to write their pipeline using the OOP approach.
